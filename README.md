@@ -1,5 +1,5 @@
 # llm-ai-agent-20-question-geussing-game
-
+```bash
 llm-ai-agent-20-question-geussing-game
 ├── main.py                 # Main entry point that launches the app
 ├── run.sh                  # Script to run the application
@@ -18,7 +18,7 @@ llm-ai-agent-20-question-geussing-game
 │   └── exa_service.py      # Web search functionality
 └── ui/
     └── gradio_ui.py        # Web interface setup
-
+```
 
 
 ## Key Files Explained
