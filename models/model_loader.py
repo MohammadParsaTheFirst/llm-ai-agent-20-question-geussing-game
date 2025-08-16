@@ -3,6 +3,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from accelerate import infer_auto_device_map, dispatch_model
 from .stopping_criteria import StopOnTokens
 
+load_dotenv()
+
 class ModelLoader:
     def __init__(self, model_name: str = "mistralai/Mistral-7B-Instruct-v0.3"):
         self.model_name = model_name
