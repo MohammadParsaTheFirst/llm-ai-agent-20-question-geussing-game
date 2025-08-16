@@ -5,3 +5,4 @@ accelerate
 gradio
 requests
 huggingface_hub
+python-dotenv
