@@ -1,23 +1,23 @@
 # llm-ai-agent-20-question-geussing-game
 ```bash
 llm-ai-agent-20-question-geussing-game
-├── main.py                 # Main entry point that launches the app
-├── run.sh                  # Script to run the application
-├── setup.sh                # Script to install dependencies
-├── .env                    # Configuration file for API keys (create from .env.example)
-├── .env.example            # Example config file template
-├── requirements.txt        # Python dependencies
-├── utils/                  # Utility functions
-│   ├── setup.py            # Handles package installation
-│   └── helpers.py          # Helper functions
-├── models/                 # AI model related code
-│   ├── model_loader.py     # Loads the Mistral model
-│   └── stopping_criteria.py# Custom model stopping logic
-├── services/               # Core functionality
-│   ├── chat_service.py     # Main chat logic
-│   └── exa_service.py      # Web search functionality
+├── main.py                  # Main entry point that launches the app
+├── run.sh                   # Script to run the application
+├── setup.sh                 # Script to install dependencies
+├── .env                     # Configuration file for API keys (create from .env.example)
+├── .env.example             # Example config file template
+├── requirements.txt         # Python dependencies
+├── utils/                   # Utility functions
+│   ├── setup.py             # Handles package installation
+│   └── helpers.py           # Helper functions
+├── models/                  # AI model related code
+│   ├── model_loader.py      # Loads the Mistral model
+│   └── stopping_criteria.py # Custom model stopping logic
+├── services/                # Core functionality
+│   ├── chat_service.py      # Main chat logic
+│   └── exa_service.py       # Web search functionality
 └── ui/
-    └── gradio_ui.py        # Web interface setup
+    └── gradio_ui.py         # Web interface setup
 ```
 
 
