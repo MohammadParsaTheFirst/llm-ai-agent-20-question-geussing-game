@@ -9,12 +9,22 @@ class ChatService:
         self.hf_token = hf_token
         self.exa_api_key = exa_api_key
         self.chat_history = []
-        self.MAX_HISTORY = 3
+        self.MAX_HISTORY = int(os.getenv("MAX_HISTORY", 3))  # Default to 3 if not set
         
         # Initialize services
-        self.model_loader = ModelLoader()
+        model_name = os.getenv("MODEL_NAME", "mistralai/Mistral-7B-Instruct-v0.3")
+        self.model_loader = ModelLoader(model_name)
         self.tokenizer, self.model, self.stopping_criteria = self.model_loader.initialize()
         self.exa_service = ExaService(self.exa_api_key)
+        # self.hf_token = hf_token
+        # self.exa_api_key = exa_api_key
+        # self.chat_history = []
+        # self.MAX_HISTORY = 3
+        
+        # # Initialize services
+        # self.model_loader = ModelLoader()
+        # self.tokenizer, self.model, self.stopping_criteria = self.model_loader.initialize()
+        # self.exa_service = ExaService(self.exa_api_key)
     
     def generate_initial_response(self, prompt: str) -> str:
         inputs = self.tokenizer(prompt, return_tensors="pt").to("cuda:0")
