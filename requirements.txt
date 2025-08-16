@@ -1,0 +1,7 @@
+exa_py
+torch
+transformers
+accelerate
+gradio
+requests
+huggingface_hub
